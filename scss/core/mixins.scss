@@ -1,0 +1,35 @@
+$maxWidth: 1440;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+
+
+@mixin btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: $main-color;
+    color: $button-color;
+    text-transform: uppercase;
+    transition: 0.2s;
+    height: 35px;
+    font-size: 1rem;
+
+    &:hover {
+        background: $violet-color;
+        color: $hover-text;
+        transition: 0.2s;
+    }
+
+    &:active {
+        background: $violet-color;
+        color: $hover-text;
+        transition: 0.2s;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,77 @@
+.content-block.active-content
+    include ../blocks/greetings.pug
+
+    .members.dashboard-table
+        .dashboard-table__header.members__header
+            .dashboard-table__info
+                .dashboard-table__title !{"All Customers"}
+                .dashboard-table__subtitle !{"Active Members"}
+            .dashboard-table__search 
+                include ../blocks/search-block.pug
+        .dashboard-table__body 
+            .dashboard-table__row
+                .dashboard-table__col !{"Customer Name"}
+                .dashboard-table__col !{""}
+                .dashboard-table__col !{"Phone Number"}
+                .dashboard-table__col !{"Email"}
+                .dashboard-table__col !{"Country"}
+                .dashboard-table__col !{"Status"}
+            .dashboard-table__row
+                .dashboard-table__col !{"Jane Cooper"}
+                .dashboard-table__col !{"Microsoft"}
+                .dashboard-table__col !{"(225) 555-0118"}
+                .dashboard-table__col !{"jane@microsoft.com"}
+                .dashboard-table__col !{"United States"}
+                .dashboard-table__col.dashboard-table__status.dashboard-table__status_active !{"Active"}
+            .dashboard-table__row
+                .dashboard-table__col !{"Floyd Miles"}
+                .dashboard-table__col !{"Yahoo"}
+                .dashboard-table__col !{"(205) 555-0100"}
+                .dashboard-table__col !{"floyd@yahoo.com"}
+                .dashboard-table__col !{"Kiribati"}
+                .dashboard-table__col.dashboard-table__status.dashboard-table__status_inactive !{"Inactive"}
+            .dashboard-table__row
+                .dashboard-table__col !{"Ronald Richards"}
+                .dashboard-table__col !{"Adobe"}
+                .dashboard-table__col !{"(302) 555-0107"}
+                .dashboard-table__col !{"ronald@adobe.com"}
+                .dashboard-table__col !{"Israel"}
+                .dashboard-table__col.dashboard-table__status.dashboard-table__status_inactive !{"Inactive"}
+            .dashboard-table__row
+                .dashboard-table__col !{"Marvin McKinney"}
+                .dashboard-table__col !{"Tesla"}
+                .dashboard-table__col !{"(252) 555-0126"}
+                .dashboard-table__col !{"marvin@tesla.com"}
+                .dashboard-table__col !{"Iran"}
+                .dashboard-table__col.dashboard-table__status.dashboard-table__status_active !{"Active"}
+            .dashboard-table__row
+                .dashboard-table__col !{"Jerome Bell"}
+                .dashboard-table__col !{"Google"}
+                .dashboard-table__col !{"(629) 555-0129"}
+                .dashboard-table__col !{"jerome@google.com"}
+                .dashboard-table__col !{"Réunion"}
+                .dashboard-table__col.dashboard-table__status.dashboard-table__status_active !{"Active"}
+            .dashboard-table__row
+                .dashboard-table__col !{"Kathryn Murphy"}
+                .dashboard-table__col !{"Microsoft"}
+                .dashboard-table__col !{"(406) 555-0120"}
+                .dashboard-table__col !{"kathryn@microsoft.com"}
+                .dashboard-table__col !{"Curaçao"}
+                .dashboard-table__col.dashboard-table__status.dashboard-table__status_active !{"Active"}
+            .dashboard-table__row
+                .dashboard-table__col !{"Jacob Jones"}
+                .dashboard-table__col !{"Yahoo"}
+                .dashboard-table__col !{"(208) 555-0112"}
+                .dashboard-table__col !{"jacob@yahoo.com"}
+                .dashboard-table__col !{"Brazil"}
+                .dashboard-table__col.dashboard-table__status.dashboard-table__status_active !{"Active"}
+            .dashboard-table__row
+                .dashboard-table__col !{"Kristin Watson"}
+                .dashboard-table__col !{"Facebook"}
+                .dashboard-table__col !{"(704) 555-0127"}
+                .dashboard-table__col !{"kristin@facebook.com"}
+                .dashboard-table__col !{"Åland Islands"}
+                .dashboard-table__col.dashboard-table__status.dashboard-table__status_inactive !{"Inactive"}
+        .dashboard-table__pagination
+            .dashboard-table__count !{"Showing data 1 to 8 of 256K entries"} 
+            include ../blocks/table-pagination.pug

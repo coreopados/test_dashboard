@@ -1,0 +1,37 @@
+.menu
+    a(href="index.html" class="logo")
+        include ../icons/logo.pug
+        .logo__name !{"Dashboard"}
+            .logo__ver !{"v.01"}
+    nav.nav
+        a(href="#" class="nav__link") 
+            include ../icons/main.pug
+            span !{"Dashboard"}
+            include ../icons/right-arrow.pug
+        a(href="#" class="nav__link") 
+            include ../icons/3d.pug
+            span !{"Product"}
+            include ../icons/right-arrow.pug
+        a(href="#" class="nav__link active") 
+            include ../icons/user.pug
+            span !{"Customers"}
+            include ../icons/right-arrow.pug
+        a(href="#" class="nav__link") 
+            include ../icons/wallet.pug
+            span !{"Income"}
+            include ../icons/right-arrow.pug
+        a(href="#" class="nav__link") 
+            include ../icons/discount.pug
+            span !{"Promote"}
+            include ../icons/right-arrow.pug
+        a(href="#" class="nav__link") 
+            include ../icons/message.pug
+            span !{"Help"}
+            include ../icons/right-arrow.pug
+    a(href="#" class="account")
+        img(src="./img/ava.png", class="account__ava" alt="") 
+        .account__info
+            .account__name  !{"Evano"}
+            .account__post !{"Project Manager"}
+    span.mobile-menu-button 
+        span.line

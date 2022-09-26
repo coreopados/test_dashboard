@@ -1,0 +1,14 @@
+html(lang="ru")
+    //- Include head
+    include ../head.pug 
+    body
+        .dashboard 
+            include ../blocks/nav.pug
+            include ../content/dashboard.pug
+            include ../content/product.pug
+            include ../content/customers.pug
+            include ../content/income.pug
+            include ../content/promote.pug
+            include ../content/help.pug
+        script(src='./js/jquery.min.js')
+        script(src='./js/script.js')
